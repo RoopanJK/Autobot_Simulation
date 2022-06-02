@@ -54,3 +54,4 @@ CATKIN_IGNORE
 #VS code
 .vscode
 
+.catkin_tool/

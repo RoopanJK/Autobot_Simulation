@@ -1,0 +1,6 @@
+autobot_dependancy/emojicloud_plugin
+/home/gokul/projects/ros/Autobot_Simulation/devel/.private/emojicloud_plugin/cmake.lock /home/gokul/projects/ros/Autobot_Simulation/devel/./cmake.lock
+/home/gokul/projects/ros/Autobot_Simulation/devel/.private/emojicloud_plugin/lib/libemojicloud_plugin.so /home/gokul/projects/ros/Autobot_Simulation/devel/lib/libemojicloud_plugin.so
+/home/gokul/projects/ros/Autobot_Simulation/devel/.private/emojicloud_plugin/lib/pkgconfig/emojicloud_plugin.pc /home/gokul/projects/ros/Autobot_Simulation/devel/lib/pkgconfig/emojicloud_plugin.pc
+/home/gokul/projects/ros/Autobot_Simulation/devel/.private/emojicloud_plugin/share/emojicloud_plugin/cmake/emojicloud_pluginConfig.cmake /home/gokul/projects/ros/Autobot_Simulation/devel/share/emojicloud_plugin/cmake/emojicloud_pluginConfig.cmake
+/home/gokul/projects/ros/Autobot_Simulation/devel/.private/emojicloud_plugin/share/emojicloud_plugin/cmake/emojicloud_pluginConfig-version.cmake /home/gokul/projects/ros/Autobot_Simulation/devel/share/emojicloud_plugin/cmake/emojicloud_pluginConfig-version.cmake
