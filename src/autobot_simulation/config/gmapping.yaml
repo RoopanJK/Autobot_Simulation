@@ -1,4 +1,4 @@
-base_frame    : "ebot_base"
+base_frame    : "dummy"
 map_frame     : "map"
 odom_frame    : "odom"
 
