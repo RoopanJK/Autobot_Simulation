@@ -14,4 +14,4 @@ local_costmap:
   inflation_radius: 0.1
   cost_scaling_factor: 90 #100.0
   observation_sources: scan
-  scan: {sensor_frame: laser_link, data_type: LaserScan, topic: /ebot/laser/scan, marking: true, clearing: true}
+  scan: {sensor_frame: laser, data_type: LaserScan, topic: /ebot/laser/scan, marking: true, clearing: true}

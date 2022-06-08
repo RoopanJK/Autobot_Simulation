@@ -26,19 +26,19 @@
 
   <!-- Map Server -->
 
-  <node pkg="map_server" name="map_server" type="map_server" args="'$(find autobot_simulation)/maps/map.yaml'" />
+  <!-- <node pkg="map_server" name="map_server" type="map_server" args="'$(find autobot_simulation)/maps/map.yaml'" /> -->
 
   <!-- Gmapping pacakge for mapping  -->
 
-  <!-- <node name="gmapping" pkg="gmapping" type="slam_gmapping" output="screen">
+  <node name="gmapping" pkg="gmapping" type="slam_gmapping" output="screen">
     <remap from="scan" to="/ebot/laser/scan" />
     <rosparam file="$(find autobot_simulation)/config/gmapping.yaml" command="load" />
   </node>
--->
+
   <!-- AMCL node -->
-<node pkg="amcl" type="amcl" name="amcl" output="screen" args="scan:=/ebot/laser/scan">
+<!-- <node pkg="amcl" type="amcl" name="amcl" output="screen" args="scan:=/ebot/laser/scan">
     <rosparam file="$(find autobot_simulation)/config/amcl.yaml" command="load" />
-  </node>
+  </node> -->
 
   <!-- Add the python node here  -->
   <!-- <node name="controller" pkg="autobot_simulation" type="waypoints.py" output="screen" /> -->
