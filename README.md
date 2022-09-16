@@ -1,5 +1,5 @@
 # Autonomous Mobile Robot Simulation (UnderWork)
-- Autonomous Mobile Robot developed for Complete Traversal of the given environment.
+###Autonomous Mobile Robot developed for Complete Traversal of the given environment.
 
 ## STAGE 1 - Traversal Using Velocity Publisher node with Waypoints.
 
