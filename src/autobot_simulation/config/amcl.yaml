@@ -10,8 +10,7 @@ recovery_alpha_slow: 0.0 #Slow average weight filter, help to decide when to rec
 recovery_alpha_fast: 0.0 #Fast average weight filter, help to decide when to recover by adding random poses
 initial_pose_x: 0.0 #Initial pose x for partical distribution
 initial_pose_y: 0.0 #Initial pose y for partical distribution
-initial_pose_a: 0.0 #Initial poso a(yaw) for partical distribution
-gui_publish_rate: 10.0 #Publish rate at which scan and paths are published for visualization
+initial_pose_a: 1.57 #Initial poso a(yaw) for partical distributiongui_publish_rate: 10.0 #Publish rate at which scan and paths are published for visualization
 use_map_topic: true #Subscribes to map topic instead of making a service call to receive map
 selective_resampling: true #Reduce resampling rate when not need to avoid particle deprivation
 

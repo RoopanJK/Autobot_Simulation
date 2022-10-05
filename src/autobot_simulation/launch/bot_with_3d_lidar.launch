@@ -1,7 +1,7 @@
 <launch>
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
 
-    <arg name="world_name" value="$(find autobot_simulation)/worlds/wall.world" />
+    <arg name="world_name" value="$(find autobot_simulation)/worlds/room.world" />
 
     <arg name="paused" value="false" />
     <arg name="use_sim_time" value="true" />
@@ -30,16 +30,16 @@
 
   <!-- Gmapping pacakge for mapping  -->
 
-  <!-- <node name="gmapping" pkg="gmapping" type="slam_gmapping" output="screen">
+  <node name="gmapping" pkg="gmapping" type="slam_gmapping" output="screen">
     <remap from="scan" to="/ebot/laser/scan" />
     <rosparam file="$(find autobot_simulation)/config/gmapping.yaml" command="load" />
   </node>
--->
-  <!-- AMCL node
-<node pkg="amcl" type="amcl" name="amcl" output="screen" args="scan:=/ebot/laser/scan">
+
+  <!-- AMCL node -->
+<!-- <node pkg="amcl" type="amcl" name="amcl" output="screen" args="scan:=/ebot/laser/scan">
     <rosparam file="$(find autobot_simulation)/config/amcl.yaml" command="load" />
-  </node>
--->
+  </node> -->
+
   <!-- Add the python node here  -->
   <!-- <node name="controller" pkg="autobot_simulation" type="waypoints.py" output="screen" /> -->
 

@@ -15,10 +15,8 @@
   <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model"
   respawn="false" output="screen"
-  args="-x 0 -y 0 -z 0 -Y 1.57 -urdf -model ebot -param robot_description" />
-  <!-- Publishes joint positions - Joint state publisher -->
-  <node name="joint_state_publisher" pkg="joint_state_publisher"
-  type="joint_state_publisher" />
+  args="-x 0 -y 0 -z 0 -Y 1.57 -urdf -model ebot -param robot_description" />  <!-- Publishes joint positions - Joint state publisher -->
+  <node name="joint_state_publisher" pkg="joint_state_publisher"  type="joint_state_publisher" />
   <!-- Uses URDF and Joint positions to compute transforms of robot -->
   <node name="robot_state_publisher" pkg="robot_state_publisher"
   type="robot_state_publisher" />

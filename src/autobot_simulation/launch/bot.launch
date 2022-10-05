@@ -1,7 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <launch>
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
 
-    <arg name="world_name" value="$(find autobot_simulation)/worlds/wall.world" />
+    <arg name="world_name" value="$(find autobot_simulation)/worlds/room.world" />
 
     <arg name="paused" value="false" />
     <arg name="use_sim_time" value="true" />
@@ -16,7 +18,7 @@
   <param name="robot_description" command="$(find xacro)/xacro '$(find autobot_simulation)/urdf/ebot_trolley.xacro'" />
 
   <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
-  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-x 0 -y 0 -z 0 -Y 1.57 -urdf -model ebot -param robot_description" />
+  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-x 0 -y 0 -z 0 -Y 0 -urdf -model autobot -param robot_description" />
 
   <!-- Publishes joint positions - Joint state publisher -->
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
@@ -30,10 +32,10 @@
 
   <!-- Gmapping pacakge for mapping  -->
 
-  <node name="gmapping" pkg="gmapping" type="slam_gmapping" output="screen">
+  <!-- <node name="gmapping" pkg="gmapping" type="slam_gmapping" output="screen">
     <remap from="scan" to="/ebot/laser/scan" />
     <rosparam file="$(find autobot_simulation)/config/gmapping.yaml" command="load" />
-  </node>
+  </node> -->
 
   <!-- AMCL node -->
 <!-- <node pkg="amcl" type="amcl" name="amcl" output="screen" args="scan:=/ebot/laser/scan">
@@ -45,6 +47,6 @@
 
   <!-- Launch Rviz and config file -->
 
-  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find autobot_simulation)/rviz/gmapping.rviz" />
+  <!-- <node type="rviz" name="rviz" pkg="rviz" args="-d $(find autobot_simulation)/rviz/gmapping.rviz" /> -->
 
 </launch>
