@@ -1,7 +1,7 @@
 # Autonomous Mobile Robot Simulation (Completed)
 ### Autonomous Mobile Robot developed for Complete Traversal of the given environment.
 
-#Basic Move base navigation within an environment.
+## Basic Move base navigation within an environment.
 
 ## STAGE 1 - Traversal Using Velocity Publisher node with Waypoints.
 
